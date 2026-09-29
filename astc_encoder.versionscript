@@ -13,9 +13,8 @@
 
 1.0 {
     global:
-        *astcenc_*;
-        *get_cpu_count*;
-        *launch_threads*;
-    local:
         *;
+    local:
+        _init;
+        _fini;
 };
