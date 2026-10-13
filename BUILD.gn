@@ -65,6 +65,7 @@ ohos_source_set("astc_encoder_static") {
 ohos_shared_library("astc_encoder_shared") {
   public_configs = [ ":astc_encoder_config" ]
   deps = [ ":astc_encoder_static" ]
+  version_script = "astc_encoder.versionscript"
   install_enable = true
   part_name = "astc-encoder"
   innerapi_tags = [ "platformsdk" ]
